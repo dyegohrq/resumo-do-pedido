@@ -13,6 +13,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -65,4 +67,67 @@ img {
     letter-spacing: 1px;
     line-height: 1.7em;
     color: var(--Desaturated-blue);
+    padding-top: 20px;
+}
+
+.preco {
+    background-color: rgba(114, 128, 167, 0.082);
+    padding: 13px;
+    border-radius: 10px;
+}
+
+.ico > img {
+    display: block;
+    width: 45px;
+}
+
+.preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.plan-type, .plan-price {
+    font-size: .8em;
+}
+
+.plan-type {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.plan-price {
+    font-weight: 600;
+    line-height: 1.7em;
+    color: var(--Desaturated-blue);
+}
+
+.change {
+    font-weight: 900;
+    font-size: .9em;
+    padding-left: 15px;
+    color: var(--Bright-blue);
+    position: relative;
+    text-decoration: none;
+}
+
+.change::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--Bright-blue);
+    margin-top: -3px;
+    transition: ease-in 0.5s;
+}
+
+.change:hover {
+    color: hsla(245, 83%, 68%, 1);
+    cursor: pointer;
+}
+
+.change:hover::after {
+    background-color: hsla(245, 83%, 68%, 1);
+    width: 0%;
 }
