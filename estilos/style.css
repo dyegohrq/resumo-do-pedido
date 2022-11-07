@@ -8,13 +8,14 @@
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
 
-    font-family: 'Red Hat Display', sans-serif;
+    /* font-family: 'Red Hat Display', sans-serif; */
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
@@ -22,10 +23,6 @@ body {
     height: 97vh;
     background-color: var(--Desaturated-blue);
     position: relative;
-}
-
-main {
-
 }
 
 .corpo {
@@ -106,7 +103,7 @@ img {
 .change {
     font-weight: 900;
     font-size: .9em;
-    padding-left: 15px;
+    padding-left: 30px;
     color: var(--Bright-blue);
     position: relative;
     text-decoration: none;
@@ -130,4 +127,35 @@ img {
 .change:hover::after {
     background-color: hsla(245, 83%, 68%, 1);
     width: 0%;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 9px;
+    margin-top: 30px;
+    background-color: var(--Bright-blue);
+    border: 0px solid rgba(0, 0, 0, 0.658);
+    color: white;
+    font-weight: 700;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsla(245, 83%, 68%, 1);
+}
+
+.cancelar {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: .8em;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.cancelar:hover {
+    color: black;
 }
