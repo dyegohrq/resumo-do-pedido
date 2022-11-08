@@ -164,4 +164,8 @@ button:hover {
     .corpo {
         width: 345px;
     }
+
+    .change {
+        padding-left: 57px;
+    }
 }
