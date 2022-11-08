@@ -19,7 +19,7 @@
 }
 
 body {
-    width: 97vw;
+    width: 100vw;
     height: 97vh;
     background-color: var(--Desaturated-blue);
     position: relative;
