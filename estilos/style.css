@@ -159,3 +159,9 @@ button:hover {
 .cancelar:hover {
     color: black;
 }
+
+@media screen and (min-width: 600px) {
+    .corpo {
+        width: 345px;
+    }
+}
