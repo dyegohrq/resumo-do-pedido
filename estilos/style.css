@@ -160,7 +160,7 @@ button:hover {
     color: black;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) {
     .corpo {
         width: 345px;
     }
